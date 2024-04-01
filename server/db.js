@@ -44,7 +44,7 @@ const createUser = async (username, password) => {
     [username, hashedPassword]
   );
   const user = res.rows[0];
-  delete user.password; // Optionally omit the password from the returned object
+  delete user.password;
   return user;
 };
 
